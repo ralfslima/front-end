@@ -1,0 +1,31 @@
+1º Peça o nome, idade e cidade, concatene em uma frase, exemplo: Olá Larissa, você tem 35 anos e mora em Blumenau.
+
+2º Peça dois números, faça a soma e exiba o resultado.
+
+3º Peça dois números, se forem iguais faça a soma, caso sejam diferentes multiplique, 
+exiba os resultados depois de efetuar os cálculos.
+
+4º Peça três notas, faça a média e dependendo da média retorne a situação do aluno. Se a média for 7 ou superior está aprovado, caso contrário reprovado.
+
+5º Criar um sistema onde o cliente informa um valor e o tipo de conversão (Real para Dólar ou Dólar para Real), retorne o valor informado convertido.
+
+6º Será pedido um número, retorne o sucessor e o antecessor.
+
+7º Peça três números e retorne o menor deles.
+
+8º Informe a velocidade máxima permitida em uma via e a velocidade do veículo, retorne a situação do motorista:
+a) Caso o veículo esteja com a velocidade menor ou igual a máxima permitida, retorne BOM MOTORISTA;
+b) Caso o veículo esteja trafegando até 10km acima do máximo haverá uma multa de R$50,00;
+b) Caso o veículo esteja trafegando entre 11km e 20km acima do máximo haverá uma multa de R$100,00;
+b) Caso o veículo esteja trafegando acima de 20km haverá uma multa de R$200,00.
+
+9º O cliente informa um número, retorne se é positivo ou negativo.
+
+10º Criar uma lista com três cidades em países diferentes, exemplo: São Paulo, Tóquio e Cidade do México, informe a hora atual (apenas horas, não precisa informar os minutos), retorne o horário naquele país escolhido.
+
+11º Peça uma temperatura e o tipo de conversão (Fahrenheit para Celsius ou Celsius para Fahrenheit), retorne a temperatura convertida.
+
+12º Peça três lados, cada um corresponde a um lado do triângulo, em seguida retorne o tipo de triângulo:
+a) Dois lados iguais e um diferente - Isósceles;
+b) Três lados iguais - Equilatero;
+c) Três lados diferentes - Escaleno.

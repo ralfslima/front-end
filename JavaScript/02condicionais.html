@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 - Condicionais</title>
+
+    <script>
+
+        // Variáveis
+        let nota1 = parseFloat(prompt("Informe a primeira nota"));
+        let nota2 = parseFloat(prompt("Informe a segunda nota"));
+        let media = (nota1+nota2)/2;
+
+        // Condicional
+        // if(media >= 7){
+        //     document.write("Parabéns! Sua média é " + media);
+        // }else{
+        //     document.write("Poxa! Você foi ruim, sua média é " + media);
+        // }
+
+        // Operador ternário
+        //document.write(media >= 7 ? "Aprovado(a)" : "Reprovado(a)");
+
+        // Operador ternário 2
+        let retorno = media >= 7 ? "Aprovado com média "+media : "Reprovado com média "+media;
+        document.write(retorno);
+
+        /*
+            >  Maior
+            <  Menor
+            >= Maior ou igual
+            <= Menor ou igual
+            == Igual
+            != Diferente
+        */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
