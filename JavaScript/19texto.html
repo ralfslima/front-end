@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19 - Texto</title>
+
+    <script>
+
+        let teclado = () => {
+
+            // Obter elementos HTML
+            let caixa = document.getElementById("caixa");
+            let texto1 = document.getElementById("texto1");
+            let texto2 = document.getElementById("texto2");
+            let quantidade = document.getElementById("quantidade");
+
+            // Exibir o texto digitado nos parágrafos
+            texto1.innerText = caixa.value.toLowerCase();
+            texto2.innerText = caixa.value.toUpperCase();
+
+            // Exibir a quantidade de caracteres digitados
+            if(caixa.value.length == 0){
+                quantidade.innerText = "Digite alguma coisa...";
+            }else if(caixa.value.length == 1){
+                quantidade.innerText = "Foi digitado apenas um caractere.";
+            }else{
+                quantidade.innerText = "Foram digitados " + caixa.value.length + " caracteres.";
+            }
+
+        }
+
+        let exemplo2 = () => {
+
+            // Obter o elemento HTML palavra
+            let palavra = document.getElementById("palavra");
+
+            // Termo contendo uma palavra
+            let termo = "Tecnologia";
+
+            // Exibindo o termo no elemento palavra
+            //palavra.innerHTML = termo.substr(2);
+            //palavra.innerHTML = termo.substr(2, 2);
+            palavra.innerHTML = termo.substring(0, 5);
+
+        }
+
+        let exemplo3 = () => {
+
+            // Termo
+            let termo = "Tecnologia";
+
+            // Obter o elemento HTML letras
+            let letras = document.getElementById("letras");
+
+            // Extrair uma letra da variável termo
+            //letras.innerText = termo.charAt(0);
+
+            // Extrair todas as letras do termo
+            for(let indice=0; indice<termo.length; indice++){
+                letras.innerHTML += (indice+1) +"º posição - "+ termo.charAt(indice) + "<br>";
+            }
+
+        }
+
+    </script>
+</head>
+<body onload="exemplo3()">
+
+    <!-- Exemplo 01 -->
+    <input type="text" id="caixa" onkeyup="teclado()">
+    <p id="texto1"></p>
+    <p id="texto2"></p>
+    <p id="quantidade"></p>
+    <hr>
+
+    <!-- Exemplo 02 -->
+    <p id="palavra"></p>
+    <hr>
+
+    <!-- Exemplo 03 -->
+    <p id="letras"></p>
+    
+</body>
+</html>
