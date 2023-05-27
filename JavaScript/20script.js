@@ -1,4 +1,4 @@
-// JSON
+// JSON de produtos
 let vetor = [
     {'codigo': '1', 'nome':'Blusa Xadrez',          'valor':'139,90', 'imagem':'imagens/feminino/1.jpg',  'categoria':'feminino'},
     {'codigo': '2', 'nome':'Casaco Casual',         'valor':'218,80', 'imagem':'imagens/feminino/2.jpg',  'categoria':'feminino'},
