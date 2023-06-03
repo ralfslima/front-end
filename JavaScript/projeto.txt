@@ -1,8 +1,8 @@
 Desenvolver um projeto bancário;
 
 - Index
-    - Formulário de cadastro
-    - Formulário de login
+    - Formulário de cadastro;
+    - Formulário de login.
 - Painel/Administrativo
     - Saldo;
     - Transferências (apenas para contas no mesmo banco);
@@ -11,4 +11,4 @@ Desenvolver um projeto bancário;
 
 Validações
     - Não pode haver contas com o mesmo e-mail e CPF;
-    - Para realizar transferências você deve ter o saldo em conta;
+    - Para realizar transferências você deve ter o saldo em conta.
