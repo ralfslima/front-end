@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function validar(){
+
+            if(localStorage.getItem('cliente') == undefined){
+                window.location.assign('index.html');
+            }
+
+        }
+
+    </script>
+</head>
+<body onload="validar()">
+
+    <h1>Hello Painel!</h1>
+
+    <button onclick="localStorage.clear(); window.location.assign('index.html');">Sair do sistema</button>
+    
+</body>
+</html>

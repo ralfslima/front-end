@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function redirecionamento(){
+            window.location.assign('painel.html');
+        }
+
+        function criarCliente(){
+            localStorage.setItem('cliente','Ralf');
+            window.location.assign('painel.html');
+        }
+
+        function validar(){
+
+            if(localStorage.getItem('cliente') != undefined){
+                window.location.assign('painel.html');
+            }
+
+        }
+
+    </script>
+</head>
+<body onload="validar()">
+
+    <a href="painel.html">Painel</a>
+
+    <h1>Hello World!</h1>
+
+    <button onclick="redirecionamento()">Acessar painel via JS</button>
+
+    <button onclick="criarCliente()">Criar cliente</button>
+    
+</body>
+</html>

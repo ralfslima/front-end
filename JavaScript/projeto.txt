@@ -1,0 +1,14 @@
+Desenvolver um projeto bancário;
+
+- Index
+    - Formulário de cadastro
+    - Formulário de login
+- Painel/Administrativo
+    - Saldo;
+    - Transferências (apenas para contas no mesmo banco);
+    - Extrato (Entradas e saídas com data);
+    - Sair do sistema.
+
+Validações
+    - Não pode haver contas com o mesmo e-mail e CPF;
+    - Para realizar transferências você deve ter o saldo em conta;
