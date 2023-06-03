@@ -20,8 +20,8 @@
         }
 
         .formularios{
-            background-color: rgba(255, 255, 255, 0.6);
-            box-shadow: -2px 0px 10px rgb(212, 212, 212);
+            background-color: #000;
+            box-shadow: -2px 0px 10px rgb(65, 65, 65);
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -40,12 +40,46 @@
         .formularioCriar h1{
             text-align: center;
             margin-bottom: 30px;
+            color: #fff;
+        }
+
+        .form-control{
+            height: 60px;
         }
 
         input{
             margin-bottom: 15px;
         }
     </style>
+
+    <script>
+
+        let dados = [];
+
+        function acessar(){
+
+            let email = document.getElementById('emailAcessar').value;
+
+           // Obter o localStorage
+           let clientes = JSON.parse(localStorage.getItem('vetor'));
+
+           // Existe
+           let existe = false;
+
+           // Laço de repetição
+           for(let i=0; i<clientes.length; i++){
+            if(clientes[i].email == email){
+                existe = true;
+            }
+           }
+
+           console.log(existe);
+
+        }
+
+
+
+    </script>
 </head>
 <body>
 
@@ -58,9 +92,9 @@
 
                     <form action="" class="formularioAcessar">
                         <h1>Acessar conta</h1>
-                        <input type="text" class="form-control" placeholder="E-mail">
-                        <input type="text" class="form-control" placeholder="Senha">
-                        <input type="button" class="btn btn-primary" value="Entrar">
+                        <input type="text" class="form-control" placeholder="E-mail" id="emailAcessar">
+                        <input type="text" class="form-control" placeholder="Senha" id="senhaAcessar">
+                        <input type="button" class="btn btn-primary" value="Entrar" onclick="acessar()">
                     </form>
 
                     
