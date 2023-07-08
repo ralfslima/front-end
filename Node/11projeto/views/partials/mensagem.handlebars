@@ -1,0 +1,29 @@
+{{#if okCadastro}}
+    <div class="alert alert-success">
+        Cadastro efetuado com sucesso!
+    </div>
+{{/if}}
+
+{{#if falhaCadastro}}
+    <div class="alert alert-danger">
+        Ops... Houve uma falha no cadastro, tente novamente.
+    </div>
+{{/if}}
+
+{{#if falhaListagem}}
+    <div class="alert alert-danger">
+        Não realizar a listagem de pessoas, atualize a página.
+    </div>
+{{/if}}
+
+{{#if okRemocao}}
+    <div class="alert alert-success">
+        Pessoa removida com sucesso!
+    </div>
+{{/if}}
+
+{{#if falhaRemocao}}
+    <div class="alert alert-danger">
+        Ops... Problemas ao remover a pessoa, tente novamente.
+    </div>
+{{/if}}

@@ -1,0 +1,12 @@
+Criar um novo projeto, nesse projeto implemente as 
+seguintes funcionalidades:
+
+1º Listar alunos (nome, nota1, nota2 e média);
+2º Cadastrar alunos (nome, nota1 e nota2);
+3º Remover alunos
+4º Pesquisar alunos através do nome, para isso utilize
+a estrutura SQL LIKE, exemplo:
+SELECT * FROM alunos WHERE nome LIKE '%PARAMETRO%';
+
+O parâmetro é o nome do aluno informado, essa função 
+retorna todos os nomes que contêm determinado termo.

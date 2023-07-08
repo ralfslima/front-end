@@ -1,0 +1,29 @@
+{{>mensagem}}
+
+<form action="/cadastrar" method="post">
+    <input type="text"   placeholder="Nome"  name="nome"  class="form-control">
+    <input type="number" placeholder="Idade" name="idade" class="form-control">
+    <input type="submit" value="Cadastrar" class="btn btn-primary">
+</form>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Remover</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {{#each pessoas}}
+            <tr>
+                <td>{{@index}}</td>
+                <td>{{nome}}</td>
+                <td>{{idade}}</td>
+                <td><a href="/remover/{{codigo}}" class="btn btn-danger">Remover</a></td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>
