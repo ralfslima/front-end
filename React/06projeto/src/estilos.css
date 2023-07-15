@@ -1,0 +1,17 @@
+form{
+    width: 70%;
+    margin: 30px auto;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+.tabela{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.tabela input{
+    margin-bottom: 20px;
+}
