@@ -1,5 +1,3 @@
-<style>
-    h1{color:red}
-</style>
 
-<h1>Aprendendo Hooks</h1>
+
+<h1 color='red'>Aprendendo Hooks</h1>
