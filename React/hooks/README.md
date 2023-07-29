@@ -1,3 +1,7 @@
 
 
-<h1 color='red'>Aprendendo Hooks</h1>
+<h1>Aprendendo Hooks</h1>
+
+- [x] #739
+- [ ] https://github.com/octo-org/octo-repo/issues/740
+- [ ] Add delight to the experience when all tasks are complete :tada:
