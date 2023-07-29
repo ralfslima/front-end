@@ -20,9 +20,13 @@ export default function(){
 
     // Função pra obter as cidades
     const filtrarCidades = async (siglaUF) => {
-        const url = await fetch(`https://brasilapi.com.br/api/ibge/municipios/v1/${siglaUF}?providers=dados-abertos-br,gov,wikipedia`)
-        const requisicao = await url.json();
-        setCidades(requisicao);
+        if(siglaUF !== 'Estados'){
+            const url = await fetch(`https://brasilapi.com.br/api/ibge/municipios/v1/${siglaUF}?providers=dados-abertos-br,gov,wikipedia`)
+            const requisicao = await url.json();
+            setCidades(requisicao);
+        }else{
+            setCidades([]);
+        }
     }
 
     // Retorno
