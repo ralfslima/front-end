@@ -1,0 +1,32 @@
+<form>
+    <input type="text"   [(ngModel)]="pessoa.nome"   name="nome"   class="form-control"  placeholder="Nome">
+    <input type="text"   [(ngModel)]="pessoa.cidade" name="cidade" class="form-control"  placeholder="Cidade">
+    <input type="text"   [(ngModel)]="pessoa.email"  name="email"  class="form-control"  placeholder="E-mail">
+    <input type="number" [(ngModel)]="pessoa.idade"  name="idade"  class="form-control"  placeholder="Idade">
+    <input type="button" value="Cadastrar" class="btn btn-primary" (click)="cadastrar()">
+</form>
+
+<!-- <p>{{pessoa | json}}</p> -->
+<!-- <p>{{dados | json}}</p> -->
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Cidade</th>
+            <th>E-mail</th>
+            <th>Idade</th>
+            <th>Remover</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let d of dados; let indice = index">
+            <td>{{d.nome}}</td>
+            <td>{{d.cidade}}</td>
+            <td>{{d.email}}</td>
+            <td>{{d.idade}}</td>
+            <td><button class="btn btn-danger" (click)="remover(indice)">Remover</button></td>
+        </tr>
+    </tbody>
+</table>

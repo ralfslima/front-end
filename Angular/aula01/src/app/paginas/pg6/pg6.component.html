@@ -1,0 +1,12 @@
+<div class="alert alert-danger" *ngIf="msgFalha">Falha ao listar as postagens.</div>
+
+<table class="table table-striped">
+    <tbody>
+        <tr *ngFor="let v of vetor">
+            <td>{{v.userId}}</td>
+            <td>{{v.id}}</td>
+            <td>{{v.title}}</td>
+            <td>{{v.body}}</td>
+        </tr>
+    </tbody>
+</table>
