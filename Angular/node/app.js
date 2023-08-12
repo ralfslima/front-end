@@ -1,9 +1,13 @@
 // Importar dependências
 const express = require('express');
 const jwt = require('jsonwebtoken');
+const cors = require('cors');
 
 // App
 const app = express();
+
+// Referência a dependência CORS
+app.use(cors());
 
 // Configurar o body-parser (transitar dados entre rotas)
 app.use(express.json());
@@ -43,7 +47,7 @@ app.post('/login', function(req, res){
     // Caso o usuário seja validado
     if(existe){
         // Criar token
-        let token = jwt.sign({'nome':usuarios[i].nome}, 'apex');
+        let token = jwt.sign({'nome':usuarios[i].nome}, 'apex', {expiresIn:'1m'});
 
         // Retorno
         res.status(200).json({'token':token});
@@ -65,8 +69,11 @@ app.get('/login', function(req, res){
         // Verificar se o token é válido
         let obj = jwt.verify(token, 'apex');
 
+        // Gerar novo token
+        let novoToken = jwt.sign({obj}, 'apex', {expiresIn:'1m'})
+
         // Retorno
-        res.status(200).json({'objeto':obj});
+        res.status(200).json({'token':novoToken});
 
     }catch(erro){
         res.status(400).json({'mensagem':erro});
